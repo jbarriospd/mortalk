@@ -13,11 +13,23 @@ body {
   background: #000000;
   color: white;
   display: flex;
-  height: 100px;
+  height: 70px;
   justify-content: space-between;
   top: 0px;
   width: 100%;
 }
+
+.header__confirmation {
+  align-items: center;
+  background: #000000;
+  color: white;
+  /* display: flex; */
+  height: 70px;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+}
+
 
 ol,
 ul {
@@ -290,7 +302,9 @@ ul {
 /* Confirmation Page */
 
 .confirmation-title {
+  display: flex;
   font-size: 40px; 
   color: white;
+  
 }
 
