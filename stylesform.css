@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+
+
+/* Header */
+
+
+.header {
+  align-items: center;
+  background: #000000;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.container__menu a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.container__menu ol {
+  display: flex;
+  height: inherit;
+}
+
+.container__menu ol li {
+  height: inherit;
+}
+
+.container__menu a {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 0 10px;
+}
+
+.header__img {
+  margin-left: 30px;
+  width: 80px;
+}
+
+.header__menu {
+  margin-right: 30px;
+  
+}
+
+.header__menu--profile {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.header__menu--profile img {
+  margin-right: 8px;
+  width: 40px;
+}
+
+.listaMenu:hover {
+
+	background: #064758;
+}
+
+
+/* .header {
+  align-items: center;
+  background-color: #151010;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+} */
+
+/* .header__img {
+  margin-left: 30px;
+  width: 200px;
+} */
+
+/* Form */
+
+.register {
+  background-image: linear-gradient(#151010, #6e3119);
+  display: flex;
+  align-items: center;
+  /*flex-direction: column;*/
+  justify-content: center;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px); /* El ancho será igual al tamaño de todo el height menos 200px (100px del header + 100px del footer) */
+
+}
+
+.caracter-red {
+  color: red;
+  font-size: 20px;
+}
+
+.register__image {
+  margin-right: 20px;
+}
+
+.register__container {
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 300px;
+  padding: 20px 70px 20px;
+  width: 300px;
+}
+
+.register__container--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register__container a {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register__container a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  align-items: center;
+  background-color: #6e3119;
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.input {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 10px;
+  border-radius: 25px;
+
+}
+
+.input:hover{
+
+  background-color: rgba(0,0,0,0.22);
+
+}
+
+::placeholder {
+  color: white;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+.button:hover {
+  background-color: rgba(232, 232, 125, 0.3);
+}
+
+
+/* Efecto matrix */
+.matrix {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.matrix:before, .matrix:after {
+  content: " ";
+  background: white;
+  height: 1rem;
+  width: 1rem;
+  display: block;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  animation: matrixAnimation 2s linear;
+  animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+.matrix:after {
+  width: 2rem;
+  bottom: 6rem;
+  top: initial;
+  animation-duration: 2.5s;
+}
+.matrix--dos::before {
+  bottom: initial;
+  top: 50%;
+  animation-duration: 3s;
+}
+.matrix--dos::after {
+  bottom: 25%;
+  top: initial;
+  animation-duration: 1.8s;
+}
+.matrix--tres::before {
+  bottom: 40%;
+  animation-duration: 5s;
+}
+.matrix--tres::after {
+  top: 40%;
+  animation-duration: 3.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes matrixAnimation {
+  0% {
+    right: 0;
+    opacity: 0.5;
+  }
+  100% {
+    right: 100vw;
+    opacity: 0;
+  }
+}
+
+/* Media Querie for max-width 600px */
+@media only screen and (max-width: 600px) {
+  .register__container {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Confirmation Page */
+
+.confirmation-title {
+  font-size: 40px; 
+  color: white;
+}
+
