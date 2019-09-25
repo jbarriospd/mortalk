@@ -15,7 +15,99 @@
   <title>Mortal Kombat</title>
 </head>
 
-<body>
+<body>   
+
+  <!-- Modal Jonny Cage-->
+  <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1Kili1F9SNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    <!-- Modal Kano-->
+  <div id="openModalKano" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aaIU-Pdtzw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+     <!-- Modal openModalLiuKang-->
+  <div id="openModalLiuKang" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uIYCAQsEvs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    <!-- Modal openModalRaiden-->
+  <div id="openModalRaiden" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yc7s5RtgVLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    <!-- Modal openModalScorpion-->
+  <div id="openModalScorpion" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-3PwvRAdv9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    <!-- Modal openModalSonya-->
+  <div id="openModalSonya" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/83iuP5brLWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    <!-- Modal openModalSub-zero-->
+  <div id="openModalSub-zero" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DMad55kzjyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    <!-- Modal openModalReptile-->
+  <div id="openModalReptile" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KwKMmt1ybPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    <!-- Modal openModalGoro-->
+  <div id="openModalGoro" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hqr_N5-1TJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    <!-- Modal openModalShang-->
+  <div id="openModalShang" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>¡Fatalityyyyy!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GFdUl-Xrxb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Fin  -->
+    
   <header class="header pulse">
     <img class="header__img pulse" src="assets/logorojo.gif" alt="Logo mk">
 
@@ -68,7 +160,7 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/JohnnyCage.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
+            <a onclick="showModal()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
             <a href="johnnycagedescripcion.html"><img class="carousel-item__details--img" src="assets/plus-icon.png"
                 alt="Plus Icon"></a>
           </div>
@@ -81,8 +173,8 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/kano.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
-            <img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon">
+            <a onclick="showModalKano()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
+            <a href="kano.html"><img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon"></a>
           </div>
           <p class="carousel-item__details--title">Kano</p>
           <p class="carousel-item__details--subtitle">Mercenario, Clan Black Dragon</p>
@@ -93,8 +185,8 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/Liu Kang.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
-            <img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon">
+            <a onclick="showModalLiu()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
+            <a href="liu kang.html"><img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon"></a>
           </div>
           <p class="carousel-item__details--title">Liu Kang</p>
           <p class="carousel-item__details--subtitle">"Monje Shaolin del Loto Blanco"</p>
@@ -105,7 +197,7 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/raiden.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
+            <a onclick="showModalRaiden()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
             <a href="raidendescripcion.html"><img class="carousel-item__details--img" src="assets/plus-icon.png"
                 alt="Plus Icon"></a>
           </div>
@@ -118,8 +210,8 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/scorpion.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
-            <img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon">
+            <a onclick="showModalScorpion()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
+            <a href="scorpion.html"><img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon"></a>
           </div>
           <p class="carousel-item__details--title">Scorpion</p>
           <p class="carousel-item__details--subtitle">"Clan Shirai Ryu"</p>
@@ -130,8 +222,8 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/sonya blade.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
-            <img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon">
+            <a onclick="showModalSonya()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
+            <a href="sonyablade.html"><img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon"></a>
           </div>
           <p class="carousel-item__details--title">Sonya blade</p>
           <p class="carousel-item__details--subtitle">"Teniente Fuerza Especiales"</p>
@@ -142,7 +234,7 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/subzero.GIF" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
+              <a onclick="showModalSubZero()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
             <a href="Sub-Zero Bi-Han.html"><img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon"></a>
           </div>
           <p class="carousel-item__details--title">Sub-Zero Bi-Han</p>
@@ -154,7 +246,7 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/reptile.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
+              <a onclick="showModalReptile()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
             <a href="Reptile.html"><img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon"></a>
           </div>
           <p class="carousel-item__details--title">Reptile</p>
@@ -166,7 +258,7 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/goro.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
+              <a onclick="showModalGoro()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
             <a href="Goro.html"><img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon"></a>
           </div>
           <p class="carousel-item__details--title">Goro</p>
@@ -178,7 +270,7 @@
         <img class="carousel-item__img" src="assets/MORTAL KOMBAT BLOG/Shang Tsung.gif" alt="" />
         <div class="carousel-item__details">
           <div>
-            <img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon">
+              <a onclick="showModalShang()"><img class="carousel-item__details--img" src="assets/play-icon.png" alt="Play Icon"></a>
             <a href="Shang_Tsung.html"><img class="carousel-item__details--img" src="assets/plus-icon.png" alt="Plus Icon"></a>
           </div>
           <p class="carousel-item__details--title">Shang Tsung</p>
@@ -198,6 +290,7 @@
     <a style="text-decoration: none;">Todas las marcas comerciales y marcas registradas son propiedad de sus respectivos dueños</a>
 
   </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>
