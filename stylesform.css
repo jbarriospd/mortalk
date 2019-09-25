@@ -301,10 +301,31 @@ ul {
 
 /* Confirmation Page */
 
-.confirmation-title {
+.confirmation-main {
+
+  background: linear-gradient(#151010, #6e3119);  
+  width: 100%;
+  height: 100vh; 
   display: flex;
+  align-items: center;  
+  justify-content: center;
+  
+}
+
+.confirmarion__container {
+
+  width: 300px;
+  height: auto; 
+  
+}
+
+
+.confirmation-title {
+  display: initial;
   font-size: 40px; 
   color: white;
+  float: left;
+  text-align: center;
   
 }
 
