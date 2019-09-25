@@ -27,7 +27,7 @@ function showModalSubZero() {
 }
 
 function showModalReptile() {
-    document.getElementById('openModalReptile-zero').style.display = 'block';
+    document.getElementById('openModalReptile').style.display = 'block';
 }
 
 function showModalGoro() {
